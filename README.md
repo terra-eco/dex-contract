@@ -1,9 +1,6 @@
-# Classic TerraSwap
-[![classic_terraswap on crates.io](https://img.shields.io/crates/v/classic_terraswap.svg)](https://crates.io/crates/classic_terraswap)
-[![workflow](https://github.com/terraswap/classic-terraswap/actions/workflows/tests.yml/badge.svg)](https://github.com/terraswap/classic-terraswap/actions/workflows/tests.yml)
-[![codecov](https://codecov.io/gh/terraswap/classic-terraswap/branch/main/graph/badge.svg?token=ERMFLEY6Y7)](https://codecov.io/gh/terraswap/classic-terraswap)
+# Classic DFSwap
 
-Uniswap-inspired automated market-maker (AMM) protocol powered by Smart Contracts on the [Terra](https://terra.money) blockchain.
+This project is a fork of [Terraswap](https://github.com/terraswap/classic-terraswap), with the only modification being the fee distribution logic. It allocates one-third of the 0.3% fee to the LP stakers at [DFLunc project](https://www.dflunc.app/stakeLP), while keeping the rest of the business logic consistent with Terraswap.
 
 ## Contracts
 
