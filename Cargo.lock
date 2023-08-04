@@ -92,7 +92,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "classic_terraswap"
+name = "classic_dfluncswap"
 version = "2.7.0"
 dependencies = [
  "classic-bindings",
@@ -340,6 +340,76 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn 1.0.67",
+]
+
+[[package]]
+name = "dfluncswap-factory"
+version = "0.1.0"
+dependencies = [
+ "classic-bindings",
+ "classic_dfluncswap",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cosmwasm-storage",
+ "cw-storage-plus 1.1.0",
+ "cw2",
+ "cw20",
+ "protobuf",
+ "schemars",
+ "serde",
+]
+
+[[package]]
+name = "dfluncswap-pair"
+version = "0.2.0"
+dependencies = [
+ "classic-bindings",
+ "classic_dfluncswap",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cosmwasm-storage",
+ "cw-storage-plus 1.1.0",
+ "cw2",
+ "cw20",
+ "integer-sqrt",
+ "protobuf",
+ "schemars",
+ "serde",
+ "thiserror",
+]
+
+[[package]]
+name = "dfluncswap-router"
+version = "0.1.0"
+dependencies = [
+ "classic-bindings",
+ "classic_dfluncswap",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cosmwasm-storage",
+ "cw-storage-plus 1.1.0",
+ "cw2",
+ "cw20",
+ "integer-sqrt",
+ "schemars",
+ "serde",
+]
+
+[[package]]
+name = "dfluncswap-token"
+version = "0.0.0"
+dependencies = [
+ "classic_dfluncswap",
+ "cosmwasm-schema",
+ "cosmwasm-std",
+ "cosmwasm-storage",
+ "cw-storage-plus 1.1.0",
+ "cw2",
+ "cw20",
+ "cw20-base",
+ "schemars",
+ "serde",
+ "thiserror",
 ]
 
 [[package]]
@@ -781,76 +851,6 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
-]
-
-[[package]]
-name = "terraswap-factory"
-version = "0.1.0"
-dependencies = [
- "classic-bindings",
- "classic_terraswap",
- "cosmwasm-schema",
- "cosmwasm-std",
- "cosmwasm-storage",
- "cw-storage-plus 1.1.0",
- "cw2",
- "cw20",
- "protobuf",
- "schemars",
- "serde",
-]
-
-[[package]]
-name = "terraswap-pair"
-version = "0.2.0"
-dependencies = [
- "classic-bindings",
- "classic_terraswap",
- "cosmwasm-schema",
- "cosmwasm-std",
- "cosmwasm-storage",
- "cw-storage-plus 1.1.0",
- "cw2",
- "cw20",
- "integer-sqrt",
- "protobuf",
- "schemars",
- "serde",
- "thiserror",
-]
-
-[[package]]
-name = "terraswap-router"
-version = "0.1.0"
-dependencies = [
- "classic-bindings",
- "classic_terraswap",
- "cosmwasm-schema",
- "cosmwasm-std",
- "cosmwasm-storage",
- "cw-storage-plus 1.1.0",
- "cw2",
- "cw20",
- "integer-sqrt",
- "schemars",
- "serde",
-]
-
-[[package]]
-name = "terraswap-token"
-version = "0.0.0"
-dependencies = [
- "classic_terraswap",
- "cosmwasm-schema",
- "cosmwasm-std",
- "cosmwasm-storage",
- "cw-storage-plus 1.1.0",
- "cw2",
- "cw20",
- "cw20-base",
- "schemars",
- "serde",
- "thiserror",
 ]
 
 [[package]]
